@@ -68,8 +68,7 @@ final class AzureOAuth2ConfigCrudControllerTest extends AbstractEasyAdminControl
 
     public function testIndexPage(): void
     {
-        $client = self::createClientWithDatabase();
-        $this->loginAsAdmin($client);
+        $client = self::createAuthenticatedClient();
         $crawler = $client->request('GET', '/admin');
         $this->assertEquals(200, $client->getResponse()->getStatusCode());
 
@@ -151,8 +150,7 @@ final class AzureOAuth2ConfigCrudControllerTest extends AbstractEasyAdminControl
     public function testValidationErrors(): void
     {
         // 创建客户端以初始化数据库
-        $client = self::createClientWithDatabase();
-        $this->loginAsAdmin($client);
+        $client = self::createAuthenticatedClient();
 
         // 测试表单级别的验证：提交空表单应详返回422状态码
         $crawler = $client->request('GET', '/admin');

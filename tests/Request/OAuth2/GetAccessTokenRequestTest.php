@@ -4,7 +4,7 @@ declare(strict_types=1);
 
 namespace Tourze\AzureOAuth2ClientBundle\Tests\Request\OAuth2;
 
-use HttpClientBundle\Tests\Request\RequestTestCase;
+use HttpClientBundle\Test\RequestTestCase;
 use PHPUnit\Framework\Attributes\CoversClass;
 use Tourze\AzureOAuth2ClientBundle\Entity\AzureOAuth2Config;
 use Tourze\AzureOAuth2ClientBundle\Request\OAuth2\GetAccessTokenRequest;
