@@ -99,7 +99,6 @@ class AzureOAuth2User implements \Stringable
 
     /**
      * @var array<string, mixed>|null
-     * @phpstan-ignore-next-line missingType.iterableValue
      */
     #[ORM\Column(type: Types::JSON, nullable: true, options: ['comment' => '原始数据'])]
     #[Assert\Type(type: 'array')]
