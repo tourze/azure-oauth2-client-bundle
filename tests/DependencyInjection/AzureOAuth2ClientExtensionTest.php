@@ -13,7 +13,7 @@ use Tourze\PHPUnitSymfonyUnitTest\AbstractDependencyInjectionExtensionTestCase;
  * @internal
  */
 #[CoversClass(AzureOAuth2ClientExtension::class)]
-class AzureOAuth2ClientExtensionTest extends AbstractDependencyInjectionExtensionTestCase
+final class AzureOAuth2ClientExtensionTest extends AbstractDependencyInjectionExtensionTestCase
 {
     public function testLoad(): void
     {

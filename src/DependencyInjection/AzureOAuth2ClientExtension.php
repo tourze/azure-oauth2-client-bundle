@@ -6,7 +6,7 @@ namespace Tourze\AzureOAuth2ClientBundle\DependencyInjection;
 
 use Tourze\SymfonyDependencyServiceLoader\AutoExtension;
 
-class AzureOAuth2ClientExtension extends AutoExtension
+final class AzureOAuth2ClientExtension extends AutoExtension
 {
     protected function getConfigDir(): string
     {
